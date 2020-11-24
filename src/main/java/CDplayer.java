@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class CDplayer extends Component {
+public class CDplayer extends Component implements IConnect{
 
     private ArrayList<Cd> CDCollection;
 
@@ -16,4 +16,6 @@ public class CDplayer extends Component {
     public void addCD(Cd cd){
         this.CDCollection.add(cd);
     }
+
+    public String
 }

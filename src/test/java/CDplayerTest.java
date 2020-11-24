@@ -35,4 +35,9 @@ public class CDplayerTest {
         assertEquals(1, cdPlayer.CDCount());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Am playing music", cdPlayer.play("Back to Black"));
+    }
+
 }
