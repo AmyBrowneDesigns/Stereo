@@ -8,4 +8,12 @@ public class CDplayer extends Component {
         super(make, model);
         this.CDCollection = new ArrayList<Cd>();
     }
+
+    public int CDCount(){
+        return this.CDCollection.size();
+    }
+    
+    public void addCD(Cd cd){
+        this.CDCollection.add(cd);
+    }
 }
