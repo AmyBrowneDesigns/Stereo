@@ -6,4 +6,14 @@ public abstract class Component {
         this.make = make;
         this.model = model;
     }
+
+    public String getMake(){
+        return this.make;
+    }
+
+    public String getModel(){
+        return this.model;
+    }
+
+
 }
