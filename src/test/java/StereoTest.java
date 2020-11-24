@@ -6,10 +6,14 @@ import static org.junit.Assert.assertEquals;
 public class StereoTest {
 
     private Stereo stereo;
+    private Radio radio;
+    private CDplayer cdPlayer;
 
     @Before
     public void before(){
         stereo = new Stereo("Soundwaves to Heaven", 5);
+        radio = new Radio("Sony", "AB241120");
+        cdPlayer = new CDplayer("Sony", "SD28hd");
     }
 
     @Test
@@ -37,5 +41,12 @@ public class StereoTest {
     public void decreaseVolume(){
         stereo.decreaseByOne();
         assertEquals(4, stereo.getVolume());
+    }
+
+    @Test
+    public void canConnectComponent(){
+        stereo.connect(radio);
+        stereo.connect(cdPlayer);
+        assertEquals(2, stereo.getComponents());
     }
 }

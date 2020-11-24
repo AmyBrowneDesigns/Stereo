@@ -35,4 +35,9 @@ public class Stereo {
     public void connect(IConnect component){
         components.add(component);
     }
+    
+    public int getComponents(){
+        return this.components.size();
+    }
+    
 }
