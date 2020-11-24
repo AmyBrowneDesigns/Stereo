@@ -17,5 +17,7 @@ public class CDplayer extends Component implements IConnect{
         this.CDCollection.add(cd);
     }
 
-    public String
+    public String play(String data){
+        return "Am playing " + data;
+    }
 }
